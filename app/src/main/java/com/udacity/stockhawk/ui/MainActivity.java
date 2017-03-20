@@ -31,6 +31,7 @@ import timber.log.Timber;
 public class MainActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<Cursor>,
         SwipeRefreshLayout.OnRefreshListener,
         StockAdapter.StockAdapterOnClickHandler {
+    //change to test repo is working
 
     private static final int STOCK_LOADER = 0;
     @SuppressWarnings("WeakerAccess")
