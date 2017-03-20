@@ -27,6 +27,7 @@ import com.udacity.stockhawk.sync.QuoteSyncJob;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import timber.log.Timber;
+import yahoofinance.YahooFinance;
 
 public class MainActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<Cursor>,
         SwipeRefreshLayout.OnRefreshListener,
@@ -45,8 +46,10 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
     TextView error;
     private StockAdapter adapter;
 
+    //on click interface from adapter
     @Override
     public void onClick(String symbol) {
+        //TODO open new activity with graph of "stock value over time"
         Timber.d("Symbol clicked: %s", symbol);
     }
 
